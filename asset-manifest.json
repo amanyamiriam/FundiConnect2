@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/FundiConnect2/static/css/main.f71b4cbd.css",
+    "main.js": "/FundiConnect2/static/js/main.c5bba00f.js",
+    "static/js/453.e9dbafbb.chunk.js": "/FundiConnect2/static/js/453.e9dbafbb.chunk.js",
+    "static/media/logo.svg": "/FundiConnect2/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/FundiConnect2/index.html",
+    "main.f71b4cbd.css.map": "/FundiConnect2/static/css/main.f71b4cbd.css.map",
+    "main.c5bba00f.js.map": "/FundiConnect2/static/js/main.c5bba00f.js.map",
+    "453.e9dbafbb.chunk.js.map": "/FundiConnect2/static/js/453.e9dbafbb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f71b4cbd.css",
+    "static/js/main.c5bba00f.js"
+  ]
+}
