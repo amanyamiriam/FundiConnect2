@@ -1,0 +1,22 @@
+.fundi-platform-container {
+  padding: 40px;
+  text-align: center;
+  background-color: #f8f8f8;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fundi-platform-container h1 {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.fundi-platform-container p {
+  color: var(--dark-text);
+  font-size: 1.1em;
+  max-width: 600px;
+  line-height: 1.6;
+}

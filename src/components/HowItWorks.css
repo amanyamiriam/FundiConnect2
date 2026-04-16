@@ -1,0 +1,60 @@
+.how-it-works-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.how-it-works-section h2 {
+  font-size: 3em; /* Increased font size for impact */
+  color: var(--dark-blue); /* Using dark-blue for consistency */
+  margin-bottom: 40px; /* Adjusted margin */
+  position: relative;
+  padding-bottom: 15px; /* Space for the underline effect */
+}
+
+.how-it-works-section h2::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 80px; /* Underline width */
+  height: 4px; /* Underline thickness */
+  background-color: var(--primary-color); /* Primary color underline */
+  border-radius: 2px;
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center; /* Changed to center for cleaner look */
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.step {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px var(--shadow-medium); /* Enhanced shadow */
+  background-color: var(--background-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow to transition */
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px var(--shadow-medium); /* More pronounced shadow on hover */
+}
+
+.step h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.step p {
+  font-size: 1em;
+  color: var(--medium-text);
+  line-height: 1.6;
+}

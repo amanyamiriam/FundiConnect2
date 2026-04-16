@@ -1,0 +1,40 @@
+.download-app-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.download-app-section h2 {
+  font-size: 2.5em;
+  color: var(--dark-text);
+  margin-bottom: 20px;
+}
+
+.download-app-section p {
+  font-size: 1.2em;
+  color: var(--light-text);
+  margin-bottom: 40px;
+}
+
+.app-stores {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.app-store-button img {
+  height: 60px; /* Adjust as needed */
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.app-store-button img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .app-store-button img {
+    height: 50px;
+  }
+}

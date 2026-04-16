@@ -1,0 +1,65 @@
+.header {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px var(--shadow-medium);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.site-logo {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.main-nav ul li {
+  margin-left: 25px;
+}
+
+.main-nav ul li a {
+  color: var(--white);
+  text-decoration: none;
+  font-size: 1.15em; /* Slightly larger font size */
+  padding: 8px 12px; /* Add some padding to make them feel more substantial */
+  border-radius: 8px; /* Rounded corners for consistency */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-nav ul li a:hover {
+  color: var(--white); /* Text color remains white on hover */
+  background-color: var(--primary-color); /* Background color changes to primary color on hover */
+}
+
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .site-logo {
+    margin-bottom: 15px;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+  }
+
+  .main-nav ul li {
+    margin: 10px 0;
+  }
+}

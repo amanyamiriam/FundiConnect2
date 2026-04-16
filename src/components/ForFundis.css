@@ -1,0 +1,95 @@
+.for-fundis-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--background-medium);
+}
+
+.for-fundis-section h2 {
+  font-size: 2.5em;
+  color: var(--dark-text);
+  margin-bottom: 20px;
+}
+
+.for-fundis-section p {
+  font-size: 1.2em;
+  color: var(--light-text);
+  margin-bottom: 40px;
+}
+
+.fundis-benefits {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.benefit-card {
+  flex: 0 1 calc(33% - 60px);
+  min-width: 280px;
+  max-width: 350px;
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px var(--shadow-medium);
+  background-color: var(--white);
+  transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+}
+
+.benefit-card h3 {
+  font-size: 1.5em;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 1em;
+  color: var(--medium-text);
+  line-height: 1.6;
+}
+
+.fundi-join-button {
+  background-color: var(--primary-color); /* Changed to primary color */
+  color: var(--white);
+  padding: 18px 35px; /* Bigger padding for big buttons */
+  border: none;
+  border-radius: 10px; /* Rounded corners */
+  font-size: 1.2em; /* Larger font size for big buttons */
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.fundi-join-button:hover {
+  background-color: var(--dark-blue); /* Changed to dark blue for hover */
+}
+
+@media (max-width: 768px) {
+  .fundi-join-button {
+    padding: 15px 30px;
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .fundi-join-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 768px) {
+  .benefit-card {
+    flex: 0 1 calc(50% - 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .benefit-card {
+    flex: 0 1 100%;
+  }
+}

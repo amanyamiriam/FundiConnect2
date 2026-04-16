@@ -1,0 +1,25 @@
+.auth-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--background-medium);
+  padding: 20px;
+}
+
+.toggle-text {
+  margin-top: 20px;
+  font-size: 1em;
+  color: var(--medium-text);
+}
+
+.toggle-link {
+  color: var(--primary-color);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.toggle-link:hover {
+  color: #16883a; /* Darker shade of primary green */
+}

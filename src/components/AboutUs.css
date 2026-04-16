@@ -1,0 +1,127 @@
+.about-us-container {
+  padding: 40px 20px;
+  background-color: var(--background-light);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-us-container h2 {
+  text-align: center;
+  color: var(--dark-text);
+  margin-bottom: 30px;
+  font-size: 2.8em;
+}
+
+.intro-text, .closing-text {
+  font-size: 1.1em;
+  line-height: 1.8;
+  color: var(--medium-text);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mission-vision {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.section-card {
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  flex: 1;
+  min-width: 300px;
+  max-width: 45%;
+  text-align: center;
+}
+
+.section-card h3 {
+  color: var(--primary-color);
+  font-size: 1.8em;
+  margin-bottom: 15px;
+}
+
+.section-card p {
+  font-size: 1em;
+  color: var(--light-text);
+  line-height: 1.6;
+}
+
+.values-section {
+  background-color: var(--white);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px var(--shadow-light);
+  margin-bottom: 50px;
+}
+
+.values-section h3 {
+  text-align: center;
+  color: var(--dark-text);
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.values-section ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.values-section ul li {
+  background-color: #e9f5ff; /* Keeping specific light blue for list items */
+  padding: 15px 20px;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1em;
+  color: var(--dark-text);
+  line-height: 1.5;
+}
+
+.values-section ul li strong {
+  color: #0056b3; /* Keeping specific dark blue for strong text */
+}
+
+@media (max-width: 768px) {
+  .about-us-container h2 {
+    font-size: 2.2em;
+  }
+
+  .intro-text, .closing-text {
+    font-size: 1em;
+  }
+
+  .section-card {
+    max-width: 100%;
+  }
+
+  .values-section h3 {
+    font-size: 1.8em;
+  }
+
+  .values-section ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-us-container h2 {
+    font-size: 1.8em;
+  }
+
+  .section-card {
+    padding: 20px;
+  }
+
+  .values-section {
+    padding: 20px;
+  }
+}

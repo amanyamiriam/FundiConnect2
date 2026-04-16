@@ -1,0 +1,72 @@
+.why-choose-us-section {
+  padding: 80px 20px;
+  text-align: center;
+  background-color: var(--white);
+}
+
+.why-choose-us-section h2 {
+  font-size: 2.5em;
+  color: var(--dark-text);
+  margin-bottom: 50px;
+}
+
+.reasons-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.reason-card {
+  flex: 0 1 calc(25% - 60px); /* Four cards per row with gap */
+  min-width: 250px;
+  max-width: 300px;
+  padding: 30px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px var(--shadow-medium);
+  background-color: var(--background-light);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reason-card:hover {
+  transform: translateY(-10px);
+}
+
+.reason-icon {
+  font-size: 4em; /* Larger icons */
+  margin-bottom: 15px;
+  color: var(--primary-color); /* Icon color */
+}
+
+.reason-card h3 {
+  font-size: 1.5em;
+  color: var(--dark-text); /* Changed to dark-text for better contrast */
+  margin-bottom: 10px;
+}
+
+.reason-card p {
+  font-size: 1em;
+  color: var(--medium-text);
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .reason-card {
+    flex: 0 1 calc(33% - 60px); /* Three cards per row on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .reason-card {
+    flex: 0 1 calc(50% - 30px); /* Two cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .reason-card {
+    flex: 0 1 100%; /* One card per row on extra small screens */
+  }
+}
