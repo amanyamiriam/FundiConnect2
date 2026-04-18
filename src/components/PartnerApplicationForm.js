@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './PartnerApplicationForm.css';
 
 function PartnerApplicationForm() {
   const [companyName, setCompanyName] = useState('');
@@ -33,7 +34,7 @@ function PartnerApplicationForm() {
   };
 
   return (
-    <div className="registration-form-wrapper">
+    <div className="partner-form-wrapper registration-form-wrapper">
       <h3>Partner Application</h3>
       <form className="registration-form" onSubmit={handleSubmit}>
         <div className="form-group">

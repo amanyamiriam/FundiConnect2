@@ -21,7 +21,7 @@ function ForFundis() {
           <p>Get paid fairly for your expertise and hard work.</p>
         </div>
       </div>
-      <Link to="/join-as-fundi" className="fundi-join-button">Join as a Fundi</Link>
+      <Link to="/fundi-get-started" className="fundi-join-button">Join as a Fundi</Link>
     </div>
   );
 }

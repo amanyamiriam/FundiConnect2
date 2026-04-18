@@ -1,2 +1,87 @@
-/* InvestorContactForm.css */
-/* Styles are primarily handled by GetStartedPage.css for consistency */
+.investor-form-wrapper {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 36px 38px;
+  background: linear-gradient(135deg, rgba(217,232,255,0.92), rgba(245,249,255,0.96));
+  border: 1px solid rgba(33, 97, 253, 0.16);
+  border-radius: 28px;
+  box-shadow: 0 24px 60px rgba(47, 106, 236, 0.14);
+}
+
+.investor-form-wrapper h3 {
+  margin-bottom: 24px;
+  font-size: 2rem;
+  color: #1f4db2;
+  letter-spacing: -0.03em;
+}
+
+.investor-form-wrapper .registration-form {
+  display: grid;
+  gap: 18px;
+}
+
+.investor-form-wrapper .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.investor-form-wrapper label {
+  font-weight: 600;
+  color: #1d3476;
+}
+
+.investor-form-wrapper input,
+.investor-form-wrapper select,
+.investor-form-wrapper textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d6e2ff;
+  border-radius: 16px;
+  background: #ffffff;
+  color: #1d2944;
+  font-size: 0.98rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.investor-form-wrapper input:focus,
+.investor-form-wrapper select:focus,
+.investor-form-wrapper textarea:focus {
+  outline: none;
+  border-color: #3764df;
+  box-shadow: 0 0 0 6px rgba(55, 100, 223, 0.12);
+}
+
+.investor-form-wrapper .submit-button {
+  max-width: 240px;
+  padding: 14px 26px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #2f7cec, #3fa7f8);
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.investor-form-wrapper .submit-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 28px rgba(63, 167, 248, 0.28);
+}
+
+.investor-form-wrapper .success-message {
+  margin-top: 20px;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: #e8f5ff;
+  border: 1px solid #cce4ff;
+  color: #0f3f80;
+}
+
+@media (max-width: 760px) {
+  .investor-form-wrapper {
+    padding: 26px 20px;
+  }
+}

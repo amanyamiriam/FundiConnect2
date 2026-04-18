@@ -1,8 +1,9 @@
 .header {
-  background-color: var(--dark-blue);
+  background-color: #0c1e58;
   color: var(--white);
   padding: 15px 20px;
-  box-shadow: 0 2px 5px var(--shadow-medium);
+  border-bottom: 4px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
 }
 
 .header-content {
@@ -15,7 +16,7 @@
 
 .site-logo {
   color: var(--primary-color);
-  font-size: 1.8em;
+  font-size: 1.6em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -25,18 +26,21 @@
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 .main-nav ul li {
-  margin-left: 25px;
+  margin-left: 18px;
 }
 
 .main-nav ul li a {
   color: var(--white);
   text-decoration: none;
-  font-size: 1.15em; /* Slightly larger font size */
-  padding: 8px 12px; /* Add some padding to make them feel more substantial */
-  border-radius: 8px; /* Rounded corners for consistency */
+  font-size: 1em;
+  padding: 8px 12px;
+  border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 

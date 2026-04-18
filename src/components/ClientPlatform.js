@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './ClientPlatform.css';
 
 function ClientPlatform() {
@@ -251,6 +252,26 @@ function ClientPlatform() {
               >
                 Job Tracking
               </button>
+            </li>
+            <li>
+              <Link to="/payments" className="nav-link">
+                Payment System
+              </Link>
+            </li>
+            <li>
+              <Link to="/messages" className="nav-link">
+                Messages
+              </Link>
+            </li>
+            <li>
+              <Link to="/bookings" className="nav-link">
+                Bookings & Schedule
+              </Link>
+            </li>
+            <li>
+              <Link to="/reviews" className="nav-link">
+                Reviews & Ratings
+              </Link>
             </li>
           </ul>
         </nav>

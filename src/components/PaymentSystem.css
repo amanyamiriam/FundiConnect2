@@ -1,0 +1,418 @@
+.payment-system-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  color: #222;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+.payment-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.payment-header h1 {
+  margin: 0 0 12px;
+  font-size: 2.2rem;
+}
+
+.payment-header p {
+  margin: 0;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.payment-success {
+  margin-bottom: 20px;
+  padding: 15px 18px;
+  border-radius: 10px;
+  background: #e6ffed;
+  color: #095d2b;
+  border: 1px solid #8dd7a5;
+  text-align: center;
+}
+
+.payment-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.payment-tabs button {
+  padding: 12px 24px;
+  border: none;
+  background: none;
+  color: #6b7280;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: all 0.2s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.payment-tabs button.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+}
+
+.payment-tabs button:hover {
+  color: #007bff;
+}
+
+.payment-overview {
+  display: grid;
+  gap: 24px;
+}
+
+.overview-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.overview-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.overview-card h3 {
+  margin: 0 0 12px;
+  color: #374151;
+  font-size: 1.1rem;
+}
+
+.overview-card .amount {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.overview-card .amount.held {
+  color: #f59e0b;
+}
+
+.overview-card .amount.released {
+  color: #10b981;
+}
+
+.overview-card .subtitle {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.payment-methods {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.payment-methods h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.payment-method {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.method-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.payment-method h4 {
+  margin: 0 0 8px;
+  color: #374151;
+}
+
+.payment-method p {
+  margin: 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.payment-history,
+.escrow-management {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.05);
+}
+
+.payment-history h3,
+.escrow-management h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #374151;
+}
+
+.escrow-management p {
+  margin-bottom: 24px;
+  color: #6b7280;
+}
+
+.payment-list,
+.escrow-list {
+  display: grid;
+  gap: 16px;
+}
+
+.payment-item,
+.escrow-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #f3f4f6;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.payment-info h4,
+.escrow-info h5 {
+  margin: 0 0 8px;
+  color: #374151;
+}
+
+.payment-meta,
+.escrow-info p {
+  margin: 4px 0;
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.transaction-id {
+  font-family: monospace;
+  background: #e5e7eb;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.payment-amount {
+  text-align: right;
+}
+
+.payment-amount .amount {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 8px;
+  color: #1f2937;
+}
+
+.payment-amount .amount.held {
+  color: #f59e0b;
+}
+
+.payment-amount .amount.released {
+  color: #10b981;
+}
+
+.payment-amount .amount.refunded {
+  color: #ef4444;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.held {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-badge.released {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-badge.refunded {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.escrow-info {
+  flex: 1;
+}
+
+.escrow-status {
+  margin-left: 20px;
+}
+
+.release-button {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.release-button:hover {
+  background: #059669;
+}
+
+.empty-state {
+  text-align: center;
+  color: #6b7280;
+  padding: 40px 20px;
+}
+
+.payment-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.payment-modal {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.payment-modal h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+.payment-modal p {
+  margin: 8px 0;
+  color: #6b7280;
+}
+
+.payment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.payment-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.payment-form input,
+.payment-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 1rem;
+  background: #fafafa;
+  outline: none;
+}
+
+.payment-notice {
+  background: #fef3c7;
+  border: 1px solid #f59e0b;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+}
+
+.payment-notice p {
+  margin: 0;
+  color: #92400e;
+  font-size: 0.9rem;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+.pay-button,
+.cancel-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pay-button {
+  background: #007bff;
+  color: white;
+}
+
+.pay-button:hover {
+  background: #0056b3;
+}
+
+.cancel-button {
+  background: #6c757d;
+  color: white;
+}
+
+.cancel-button:hover {
+  background: #545b62;
+}
+
+@media (max-width: 768px) {
+  .overview-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .payment-item,
+  .escrow-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .payment-amount {
+    text-align: left;
+  }
+
+  .modal-actions {
+    flex-direction: column;
+  }
+}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './InvestorContactForm.css';
 
 function InvestorContactForm() {
   const [fullName, setFullName] = useState('');
@@ -30,7 +31,7 @@ function InvestorContactForm() {
   };
 
   return (
-    <div className="registration-form-wrapper">
+    <div className="investor-form-wrapper registration-form-wrapper">
       <h3>Investor Relations Contact</h3>
       <form className="registration-form" onSubmit={handleSubmit}>
         <div className="form-group">
