@@ -1,12 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 import './Header.css';
 
 function Header() {
   return (
     <header className="header">
       <div className="header-content">
-        <Link to="/" className="site-logo">FundiConnect</Link>
+        <Logo />
         <nav className="main-nav">
           <ul>
             <li><Link to="/">Home</Link></li>

@@ -30,9 +30,27 @@ body {
   font-family: 'Poppins', 'Inter', sans-serif;
   line-height: 1.6;
   color: var(--dark-text);
-  background-color: var(--background-light);
+  background: #ffffff;
+  min-height: 100vh;
 }
 
 .App {
   text-align: center;
+  background: transparent;
+}
+
+.home-page {
+  min-height: 100vh;
+  background: transparent;
+}
+
+.home-page .hero-section,
+.home-page .how-it-works-section,
+.home-page .services-section,
+.home-page .why-choose-us-section,
+.home-page .for-fundis-section,
+.home-page .testimonials-section,
+.home-page .download-app-section,
+.home-page footer {
+  background: transparent;
 }

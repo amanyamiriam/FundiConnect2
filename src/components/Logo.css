@@ -1,0 +1,43 @@
+.fundi-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.fundi-logo-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  background: rgba(4, 122, 36, 0.16);
+  box-shadow: inset 0 0 0 1px rgba(4, 122, 36, 0.18);
+}
+
+.fundi-logo-mark svg {
+  width: 32px;
+  height: 32px;
+}
+
+.fundi-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.fundi-logo-title {
+  color: #0f5e24;
+  font-size: 1.8rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.fundi-logo-subtitle {
+  color: #8fdba0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}

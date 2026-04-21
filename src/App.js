@@ -40,7 +40,7 @@ function App() {
         <Header /> {/* Render the Header component here */}
         <Routes>
           <Route path="/" element={
-            <>
+            <div className="home-page">
               <HeroSection />
               <HowItWorks />
               <Services />
@@ -49,7 +49,7 @@ function App() {
               <Testimonials />
               <DownloadApp />
               <Footer />
-            </>
+            </div>
           } />
           <Route path="/auth" element={<AuthPage />} />
           <Route path="/fundi-platform" element={<FundiPlatform />} />

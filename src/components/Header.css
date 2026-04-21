@@ -1,23 +1,31 @@
 .header {
-  background-color: #0c1e58;
-  color: var(--white);
-  padding: 15px 20px;
-  border-bottom: 4px solid rgba(255, 255, 255, 0.12);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  background-color: #203900;
+  color: #ffffff;
+  padding: 18px 20px;
+  border-bottom: none;
+  box-shadow: none;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 }
 
 .header-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .site-logo {
-  color: var(--primary-color);
+  color: #ffffff;
   font-size: 1.6em;
-  font-weight: bold;
+  font-weight: 700;
+  font-style: italic;
   text-decoration: none;
 }
 
@@ -26,6 +34,7 @@
   margin: 0;
   padding: 0;
   display: flex;
+  justify-content: center;
   flex-wrap: nowrap;
   overflow-x: auto;
   white-space: nowrap;
@@ -36,17 +45,17 @@
 }
 
 .main-nav ul li a {
-  color: var(--white);
-  text-decoration: none;
+  color: #ffffff;
   font-size: 1em;
-  padding: 8px 12px;
+  font-style: italic;
+  padding: 8px 16px;
   border-radius: 8px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .main-nav ul li a:hover {
-  color: var(--white); /* Text color remains white on hover */
-  background-color: var(--primary-color); /* Background color changes to primary color on hover */
+  color: #ffffff;
+  background-color: rgba(79, 195, 247, 0.18);
 }
 
 @media (max-width: 768px) {
