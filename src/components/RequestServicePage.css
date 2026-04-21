@@ -1,0 +1,138 @@
+.request-service-page {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.request-service-hero {
+  background: linear-gradient(135deg, #1f3f7f 0%, #2874d7 100%);
+  color: #fff;
+  border-radius: 24px;
+  padding: 40px 32px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.request-service-copy h1 {
+  font-size: clamp(2rem, 2.8vw, 3.2rem);
+  margin-bottom: 18px;
+}
+
+.request-service-copy p {
+  max-width: 720px;
+  margin: 0 auto 24px;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+.request-service-copy ul {
+  list-style: disc;
+  margin: 0 auto;
+  padding-left: 20px;
+  max-width: 540px;
+  text-align: left;
+}
+
+.request-service-copy li {
+  margin-bottom: 10px;
+}
+
+.request-service-form-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 18px 45px rgba(17, 44, 84, 0.12);
+}
+
+.request-service-form-card h2 {
+  margin-bottom: 12px;
+  font-size: 2rem;
+}
+
+.request-service-form-card p {
+  margin-bottom: 24px;
+  color: #556780;
+}
+
+.request-service-form {
+  display: grid;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1d2c4d;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 14px 16px;
+  border: 1px solid #cbd3e0;
+  border-radius: 12px;
+  font-size: 1rem;
+  color: #1d2c4d;
+  background: #f9fbff;
+}
+
+.form-group textarea {
+  min-height: 130px;
+}
+
+.submit-job-button {
+  width: fit-content;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 999px;
+  background: #1f3f7f;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-job-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 14px 30px rgba(31, 63, 127, 0.22);
+}
+
+.success-text {
+  margin-top: 20px;
+  color: #187b5f;
+  font-weight: 600;
+}
+
+@media (max-width: 860px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .request-service-page {
+    padding: 28px 16px;
+  }
+
+  .request-service-hero {
+    padding: 28px 20px;
+  }
+
+  .request-service-form-card {
+    padding: 24px;
+  }
+}

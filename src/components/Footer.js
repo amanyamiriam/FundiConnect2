@@ -14,6 +14,7 @@ function Footer() {
           <h4>Quick Links</h4>
           <ul>
             <li><Link to="/">Home</Link></li>
+            <li><Link to="/request-service">Post a Job</Link></li>
             <li><Link to="/job-market">Job Market</Link></li>
             <li><Link to="/payments">Payments</Link></li>
             <li><Link to="/messages">Messages</Link></li>

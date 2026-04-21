@@ -11,6 +11,7 @@ function Header() {
           <ul>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/get-started">Get Started</Link></li>
+            <li><Link to="/request-service">Post a Job</Link></li>
             <li><Link to="/client-platform">Client Platform</Link></li>
             <li><Link to="/job-market">Job Market</Link></li>
             <li><Link to="/payments">Payments</Link></li>

@@ -24,6 +24,7 @@ import ReviewSystem from './components/ReviewSystem';
 import TermsOfService from './components/TermsOfService';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import FAQ from './components/FAQ';
+import RequestServicePage from './components/RequestServicePage';
 
 import AboutUs from './components/AboutUs'; // Import AboutUs component
 import ContactUs from './components/ContactUs'; // Import ContactUs component
@@ -67,6 +68,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} /> {/* Route for Contact Us page */}
           <Route path="/investors" element={<InvestorContactForm />} />
           <Route path="/partners" element={<PartnerApplicationForm />} />
+          <Route path="/request-service" element={<RequestServicePage />} />
           <Route path="/fundi-registration" element={<FundiRegistrationForm />} />
           <Route path="/terms" element={<TermsOfService />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
